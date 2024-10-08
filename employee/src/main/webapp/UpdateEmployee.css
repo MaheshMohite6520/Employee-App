@@ -1,0 +1,114 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00698f;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 2s;
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .card-text {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%; /* Ensure full width for form groups */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"], input[type="submit"] {
+            width: 100%; /* Ensure full width for input fields */
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* Ensure full width for button group */
+        }
+
+        .btn {
+            width: 45%; /* Button width */
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #00698f;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
